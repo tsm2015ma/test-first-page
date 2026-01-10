@@ -1,0 +1,57 @@
+body {
+    background-image: url(background.jpg)
+}
+
+.title {
+  text-align: center;
+}
+
+h1 {
+  display: inline-block;
+  background-color: rgba(61, 94, 121, 0.404);
+  color: rgb(0, 0, 255);
+  
+}
+/* all head */
+
+p {
+color: pink;
+text-align: center;
+font-family: 'Courier New', Courier, monospace;
+font-size: 20px;
+font-weight: bold;
+}
+p1 {
+color: pink;
+font-family: 'Courier New', Courier, monospace;
+font-size: 20px;
+font-weight: bold;
+}
+label {
+    color: aqua;
+    text-align: left;
+}
+h2 {color: rgb(121, 3, 232);}
+img {
+  display: block;
+}
+a {
+    color: blueviolet;
+}
+a:hover {
+    color: blue;
+}
+
+h21 {
+   margin-left: 470px;
+   font-size: 40px;
+   color: blueviolet;
+}
+.submit-box {
+  position: sticky;
+  bottom: 10px;
+}
+
+input[type="submit"] {
+  font-size: 10px;
+}
