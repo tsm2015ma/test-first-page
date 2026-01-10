@@ -1,7 +1,18 @@
-body {
-    background-image: url(background.jpg)
+/* إعدادات عامة */
+* {
+  box-sizing: border-box;
 }
 
+body {
+  background-image: url(background.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+/* العنوان */
 .title {
   text-align: center;
 }
@@ -10,48 +21,79 @@ h1 {
   display: inline-block;
   background-color: rgba(61, 94, 121, 0.404);
   color: rgb(0, 0, 255);
-  
+  padding: 10px 20px;
 }
-/* all head */
 
+/* الفقرات */
 p {
-color: pink;
-text-align: center;
-font-family: 'Courier New', Courier, monospace;
-font-size: 20px;
-font-weight: bold;
+  color: pink;
+  text-align: center;
+  font-size: 1.1rem;   /* بدل px */
+  font-weight: bold;
 }
-p1 {
-color: pink;
-font-family: 'Courier New', Courier, monospace;
-font-size: 20px;
-font-weight: bold;
+
+/* ❌ p1 عنصر غير صحيح → نحوله كلاس */
+.p1 {
+  color: pink;
+  font-size: 1.1rem;
+  font-weight: bold;
 }
-label {
-    color: aqua;
-    text-align: left;
+
+/* العناوين */
+h2 {
+  color: rgb(121, 3, 232);
+  text-align: center;
 }
-h2 {color: rgb(121, 3, 232);}
+
+/* الصور */
 img {
   display: block;
-}
-a {
-    color: blueviolet;
-}
-a:hover {
-    color: blue;
+  max-width: 100%;
+  height: auto;
+  margin: auto;
 }
 
-h21 {
-   margin-left: 470px;
-   font-size: 40px;
-   color: blueviolet;
+/* الروابط */
+a {
+  color: blueviolet;
 }
+
+a:hover {
+  color: blue;
+}
+
+/* ❌ h21 غير موجود في HTML */
+/* نستخدم h2 بدلها */
+.test h2 {
+  font-size: 2rem;
+  margin: 20px auto;
+  text-align: center;
+}
+
+/* زر الإرسال */
 .submit-box {
-  position: sticky;
-  bottom: 10px;
+  position: fixed;   /* أفضل من sticky للأزرار */
+  bottom: 15px;
+  right: 15px;
 }
 
 input[type="submit"] {
-  font-size: 10px;
+  font-size: 1rem;
+  padding: 10px 20px;
+}
+
+/* 📱 للجوال */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  .submit-box {
+    right: 10px;
+    bottom: 10px;
+  }
 }
