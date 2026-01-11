@@ -1,120 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>first page</title>
-  <link rel="icon" type="image/png" href="react-icons.svg">
-  <link rel="stylesheet" href="index.css">
+    <title>First Page</title>
+    <link rel="icon" type="image/png" href="react-icons.svg">
+    <link rel="stylesheet" href="index.css">
 </head>
 
 <body>
 
-  <header class="header">
-    <img src="img page.png" alt="header image">
-    <h1>study and practice</h1>
-  </header>
+    <header class="title">
+        <h1>Study and Practice</h1>
+    </header>
 
-  <section class="profile">
-    <img src="img.png" alt="my profile">
-  </section>
+    <img src="img.png" alt="my profile" class="profile-img">
 
-  <section class="content">
-    <h2>test</h2>
+    <h2 class="test-title">Test</h2>
 
     <p>
-      <b>يارب</b> الهمني <strong>الصبر</strong><br>
-      <i>يارب</i> <em>انجح</em>
+        <b>يارب</b> الهمني <strong>الصبر</strong><br>
+        <i>يارب</i> <em>انجح</em>
     </p>
 
     <p>
-      time practice in my html <br>
-      is 2:00 <sub>am</sub> to 4:00 <sub>am</sub>
+        Time practice in my HTML<br>
+        is 2:00 <sub>am</sub> to 4:00 <sub>am</sub>
     </p>
 
     <p>
-      <b>level of my study:</b><br>
-      1<sup>st</sup> level: HTML <br>
-      2<sup>nd</sup> level: CSS <br>
-      3<sup>rd</sup> level: Java
+        <b>Level of my study:</b><br>
+        1<sup>st</sup> level: HTML<br>
+        2<sup>nd</sup> level: CSS<br>
+        3<sup>rd</sup> level: Java
     </p>
 
     <hr>
 
-    <h2>My goal</h2>
+    <h2>My Goal</h2>
+
     <ol>
-      <li>finish HTML like a pro</li>
-      <li>practice my English</li>
+        <li>Finish HTML like a pro</li>
+        <li>Practice my English</li>
     </ol>
 
     <ol type="A">
-      <li>finish CSS like a pro</li>
-      <li>finish Java like a pro</li>
+        <li>Finish CSS like a pro</li>
+        <li>Finish Java like a pro</li>
     </ol>
 
     <h2>What I need to do</h2>
     <ul>
-      <li>study</li>
-      <li>focus</li>
-      <li>practice</li>
+        <li>Study</li>
+        <li>Focus</li>
+        <li>Practice</li>
     </ul>
 
-    <a href="index2.html">if you feel bad come here</a>
-  </section>
+    <a href="index2.html">If you feel bad come here</a>
 
-  <section class="table-section">
     <table>
-      <caption>List of courses I have completed</caption>
-      <tr>
-        <th>Day</th>
-        <th>Course</th>
-        <th>Time</th>
-      </tr>
-      <tr>
-        <td>Sun & Mon</td>
-        <td>HTML</td>
-        <td>6 hours</td>
-      </tr>
-      <tr>
-        <td>Tue & Wed</td>
-        <td>CSS</td>
-        <td>-</td>
-      </tr>
-      <tr>
-        <td colspan="3">Thu & Sat – I don't know yet</td>
-      </tr>
+        <caption>List of courses I have completed</caption>
+        <tr>
+            <th>Day</th>
+            <th>Course</th>
+            <th>Time</th>
+        </tr>
+        <tr>
+            <td>Sun & Mon</td>
+            <td>HTML</td>
+            <td>6 hours</td>
+        </tr>
+        <tr>
+            <td>Tue & Wed</td>
+            <td>CSS</td>
+            <td>—</td>
+        </tr>
+        <tr>
+            <td colspan="3">Thu & Sat - Not decided yet</td>
+        </tr>
     </table>
-  </section>
 
-  <section class="form-section">
+    <hr>
+
     <h2>Come with me</h2>
 
     <form>
-      <label>User name</label>
-      <input type="text">
+        <label for="name">User name</label>
+        <input type="text" id="name">
 
-      <p>Gender:</p>
-      <label><input type="radio" name="gender"> Male</label>
-      <label><input type="radio" name="gender"> Female</label>
+        <p>Gender:</p>
+        <label><input type="radio" name="gender"> Male</label>
+        <label><input type="radio" name="gender"> Female</label>
 
-      <p>Reaction:</p>
-      <label><input type="checkbox"> Laughter</label>
-      <label><input type="checkbox"> Surprise</label>
+        <p>Where do you live?</p>
+        <select>
+            <option>Select here</option>
+            <option>Sea</option>
+            <option>Sky</option>
+            <option>Forest</option>
+        </select>
 
-      <label>Where do you live?</label>
-      <select>
-        <option>Select here</option>
-        <option>Sea</option>
-        <option>Sky</option>
-        <option>Forest</option>
-      </select>
-
-      <div class="submit-box">
-        <input type="submit" value="Submit">
-      </div>
+        <div class="submit-box">
+            <input type="submit" value="Submit">
+        </div>
     </form>
-  </section>
 
 </body>
 </html>
