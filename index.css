@@ -1,99 +1,100 @@
-/* إعدادات عامة */
 * {
   box-sizing: border-box;
 }
 
 body {
+  margin: 0;
+  padding: 16px;
   background-image: url(background.jpg);
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
-  margin: 0;
   font-family: 'Courier New', Courier, monospace;
 }
 
-/* العنوان */
 .title {
   text-align: center;
 }
 
 h1 {
   display: inline-block;
-  background-color: rgba(61, 94, 121, 0.404);
-  color: rgb(0, 0, 255);
   padding: 10px 20px;
+  background-color: rgba(61, 94, 121, 0.4);
+  color: blue;
+  border-radius: 10px;
 }
 
-/* الفقرات */
+.profile-img {
+  display: block;
+  margin: 20px auto;
+  width: 40%;
+  max-width: 150px;
+}
+
+.test-title {
+  text-align: center;
+  color: blueviolet;
+  font-size: 2rem;
+}
+
 p {
   color: pink;
   text-align: center;
-  font-size: 1.1rem;   /* بدل px */
-  font-weight: bold;
-}
-
-/* ❌ p1 عنصر غير صحيح → نحوله كلاس */
-.p1 {
-  color: pink;
   font-size: 1.1rem;
   font-weight: bold;
 }
 
-/* العناوين */
 h2 {
   color: rgb(121, 3, 232);
   text-align: center;
 }
 
-/* الصور */
-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-  margin: auto;
-}
-
-/* الروابط */
 a {
+  display: block;
+  text-align: center;
   color: blueviolet;
+  margin: 20px 0;
 }
 
 a:hover {
   color: blue;
 }
 
-/* ❌ h21 غير موجود في HTML */
-/* نستخدم h2 بدلها */
-.test h2 {
-  font-size: 2rem;
-  margin: 20px auto;
-  text-align: center;
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
 }
 
-/* زر الإرسال */
+table, th, td {
+  border: 1px solid rgb(122, 53, 186);
+  border-radius: 6px;
+  text-align: center;
+  padding: 8px;
+}
+
+form {
+  max-width: 500px;
+  margin: auto;
+}
+
+label {
+  color: aqua;
+  display: block;
+  margin-top: 10px;
+}
+
+input, select {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+}
+
 .submit-box {
-  position: fixed;   /* أفضل من sticky للأزرار */
-  bottom: 15px;
-  right: 15px;
+  text-align: center;
+  margin-top: 20px;
 }
 
 input[type="submit"] {
-  font-size: 1rem;
+  font-size: 16px;
   padding: 10px 20px;
-}
-
-/* 📱 للجوال */
-@media (max-width: 600px) {
-  h1 {
-    font-size: 1.5rem;
-  }
-
-  p {
-    font-size: 1rem;
-  }
-
-  .submit-box {
-    right: 10px;
-    bottom: 10px;
-  }
 }
